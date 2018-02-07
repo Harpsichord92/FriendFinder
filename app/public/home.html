@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Home</title>
+
+<!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<style> type="text/css">
+
+/* Google Fonts */
+@import url(http://fonts.googleapis.com/css?amily=Anonymouse+Pro);
+
+/* Global */
+html {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+body {
+	height: calc(100vh - 8em);
+	padding: 4em;
+	color: rgba(255, 255, 255, .75);
+	font-family: 'Anonymouse Pro', monospace;
+	background-color: rgb(25, 25, 25);
+}
+
+.line-1 {
+	position: relative;
+	top: 50%;
+	width: 24em;
+	margin: 0 auto;
+	border-right: 2px solid rgba(255, 255, 255, .75);
+	font-size: 180%;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+	animation: typewriter 4s steps(44) 1s 1 normal both,
+	blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+	from { width: 0; }
+	to { width: 24em; }
+}
+
+@keyframes blinkTextCursor {
+	from { border-right-color: rgba(255, 255, 255, .75); 
+	to { border-right-color: transparent; }
+}
+
+#backgroundImage { z-index: 1; }
+
+#backgroundImage: before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url(./public/background.gif);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		opacity: 0.4;
+		filter: alpha(opacity=40);
+		height: 100%;
+		width: 100%;
+}
+
+.front {
+	margin-top: 36em;
+}
+
+h1 {
+	color: white;
+	font-weight: 900;
+	top: 200px;
+	position: relative;
+}
+
+button {
+	background: none;
+	border: 1px solid white;
+	position: relative;
+	left: 15px;
+	top: -10em;
+	height: 50px;
+	width: 700px;
+}
+
+button: hover {
+	background-color: #CFE1E1;
+}
+
+</style>
+
+<body>
+
+	<div class="container-fluid">
+
+		<div class="text-center">
+
+			<h1 class="line-1 anim-typewriter"> Where programmers can meet other programmers!</h1>
+
+				<h1> Programmers Meet</h1>
+
+					<div id="backgroundImage">
+
+						<div class="front">
+
+							<a href='/survey' type="button">
+								<button> Go to Survey</button>
+							</a>
+
+						</div>
+
+					</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

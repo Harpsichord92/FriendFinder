@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+<!-- Jquery CDN  -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<style type="text/css">
+	body {
+		background-image: url(https://static.pexels.com/photos/25516/pexels-photo-25516.jpg);
+		color: black;
+	}
+</style>
+<body>
+
+<!-- Questions -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-10">
+				<form name="myForm">
+					<div class="input-group">
+	  					<div>
+							<h3>Name</h3>
+		  					<input id="name" type="text" class="form-control" name="name">
+	  					</div>
+	  					<div>
+							<h3>Image</h3>
+		  						<input id="image" type="text" class="form-control" name="img">
+	  						</div>
+	  					<input class="submit" type="submit" name="Submit">
+					</div>
+				</form>
+
+				<!-- Question 1	 -->
+
+				<h1>Which programming language do you prefer?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu q1">
+				    <li value="1"><a href="#">Javascript</a></li>
+				    <li value="2"><a href="#">C++</a></li>
+				    <li value="3"><a href="#">Ruby</a></li>
+				    <li value="4"><a href="#">Java</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question 1 -->
+				
+				<br><br><br>
+
+				<!-- Question 2 -->
+				<h1>How long have you been coding for?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q2">
+				    <li value="1"><a href="#">Less then 1 year</a></li>
+				    <li value="2"><a href="#">Less than 5 years</a></li>
+				    <li value="3"><a href="#">More than 6 years</a></li>
+				    <li value="4"><a href="#">More than 10 years</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question2 -->				
+
+				<br><br><br>
+
+				<!-- Question 3 -->
+				<h1>Which animal best describes you?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q3">
+				    <li value="1"><a href="#">Lion</a></li>
+				    <li value="2"><a href="#">Dog</a></li>
+				    <li value="3"><a href="#">Manbear Pig</a></li>
+				    <li value="4"><a href="#">Turtle</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question3 -->
+
+				<br><br><br>
+
+				<!-- Question 4 -->
+				<h1>Which IDE do you prefer?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q4">
+				    <li value="1"><a href="#">Sublime</a></li>
+				    <li value="2"><a href="#">Sublime</a></li>
+				    <li value="3"><a href="#">Sublime</a></li>
+				    <li value="4"><a href="#">Sublime</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question4 -->
+
+				<br><br><br>
+
+				<!-- Question 5 -->
+				<h1>Which operating system do you prefer?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q5">
+				    <li value="1"><a href="#">Mac</a></li>
+				    <li value="2"><a href="#">Windows</a></li>
+				    <li value="3"><a href="#">Linux</a></li>
+				    <li value="4"><a href="#">Other</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question 5 -->
+
+				<br><br><br>
+
+				<!-- Question 6 -->
+				<h1>Which computer short-cut do you prefer?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q6">
+				    <li value="1"><a href="#">Undo</a></li>
+				    <li value="2"><a href="#">Copy/Paste</a></li>
+				    <li value="3"><a href="#">Screen Shot</a></li>
+				    <li value="4"><a href="#">none of the above</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question 6 -->
+
+				<br><br><br>
+
+				<!-- Question 7 -->
+				<h1>What kind of programmer are you?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q7">
+				    <li value="1"><a href="#">Perfectionist</a></li>
+				    <li value="2"><a href="#">Code may not be pretty, but it works!</a></li>
+				    <li value="3"><a href="#">Its been written before why write it again.</a></li>
+				    <li value="4"><a href="#">Theoretical programmer</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question 7 -->
+
+				<br><br><br>
+
+				<!-- Question 8 -->
+				<h1>How strong is your wifi connection?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q8">
+				    <li value="1"><a href="#">Very Strong</a></li>
+				    <li value="2"><a href="#">Strong</a></li>
+				    <li value="3"><a href="#">Weak</a></li>
+				    <li value="4"><a href="#">Very Weak</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question 8 -->
+
+				<br><br><br>
+
+				<!-- Question 9 -->
+				<h1>What type of music do you listen to while you program?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q9">
+				    <li value="1"><a href="#">Techno</a></li>
+				    <li value="2"><a href="#">Metal</a></li>
+				    <li value="3"><a href="#">Rock</a></li>
+				    <li value="4"><a href="#">None of the above</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question 9 -->
+
+				<br><br><br>
+
+				<!-- Question 10 -->
+				<h1>Do you prefer the front-end or the back-end?</h1>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Select an Option
+				    <span class="caret"></span>
+				  </button>
+				  <ul  class="dropdown-menu q10">
+				    <li value="1"><a href="#">Front-end</a></li>
+				    <li value="2"><a href="#">Back-end</a></li>
+				    <li value="3"><a href="#">Both</a></li>
+				    <li value="4"><a href="#">None</a></li>
+				  </ul>
+				</div> 
+				<!-- End of question 10-->
+		</div>
+	</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	<span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">We found your perfect match!</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- End of Modal -->
+
+<!-- Capturing user's choice -->
+<script type="text/javascript">
+$(document).ready(function() {
+		let q1 = 0,q2 = 0,q3 = 0, q4 = 0, q5 = 0, q6 = 0, 
+			q7 = 0, q8 = 0, q9 = 0, q10 = 0;
+		var userScore =[];
+
+		//Replaces the default "Select option with users choice" 
+		$(".dropdown-menu li a").on('click', function(){
+		  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+		});
+
+		// gets question input value
+		 $('.q1 li').on('click', function() {
+		 	q1 = $(this).val();
+		 });
+
+		 $('.q2 li').on('click', function() {
+		 	q2 = $(this).val();
+		 });
+
+		  $('.q2 li').on('click', function() {
+		 	q3 = $(this).val();
+		 });
+
+		 $('.q4 li').on('click', function() {
+		 	q4 = $(this).val();
+		 }); 
+
+		 $('.q4 li').on('click', function() {
+		 	q5 = $(this).val();
+		 }); 
+
+		 $('.q5 li').on('click', function() {
+		 	q6 = $(this).val();
+		 }); 
+
+		 $('.q6 li').on('click', function() {
+		 	q7 = $(this).val();
+		 }); 
+
+		 $('.q7 li').on('click', function() {
+		 	q8 = $(this).val();
+		 }); 
+
+		 $('.q8 li').on('click', function() {
+		 	q9 = $(this).val();
+		 });
+
+		 $('.q9 li').on('click', function() {
+		 	q10 = $(this).val();
+		 }); 
+		 
+		 // When Submit button is clicked ......
+			$('.submit').on('click', function(event) {
+				event.preventDefault(); 
+
+				// Validation
+				 let userScore = [q1, q2 ,q3 ,q4, q5 ,q6, q7, q8 ,q9, q10];
+					const isName = document.forms["myForm"]["name"].value;
+				    const isImg = document.forms["myForm"]["img"].value;
+
+				    //Checks if name and image input are empty and if all questions are filled out
+				    if (isName == "" || isImg == "") {
+				        alert("All fields must be filled out");
+				    }
+				    else {
+
+				    	// User input information
+						  let personData = {
+						    "name": $('#name').val().trim(),
+						    "photo":$('#image').val().trim(),
+						    "scores":[q1, q2 ,q3 ,q4, q5 ,q6, 
+						    		  q7, q8 ,q9, q10]
+						  }
+
+						// Posts users name, image & score
+	    				$.post('/api/friend', personData, function(data) {
+					 		//Clears out name and image input 
+					 		$('#name').val("");
+					 		$('#image').val("");
+						});
+
+						// Holds users score
+						// Compares Scores
+						 scoreCompare(userScore); 
+				    }
+			}); 
+		function scoreCompare(userScore) {
+			const currentURL = window.location.origin;
+			let scoreArr = [];
+			let sum = 0; 
+			$.ajax(
+			{
+				url: currentURL + '/api/friend',
+				method: 'GET'
+			})
+			.done(function(data) {
+				let lowScore = 10;
+				let index = 0;
+
+				//First loop chooses the nth element in the array of people
+				for(let i = 0; i < data.length - 1; i++){
+
+					//Subtracts both scores and adds it to sum variable
+					for(let j = 0; j < userScore.length; j++) {
+						sum += userScore[j] - data[i].scores[j];
+					}
+
+					// Push sum to score array then resets sum to 0
+					scoreArr.push(Math.abs(sum));
+					sum = 0; 
+				}
+
+				//Get index of lowest number in the score arr 
+				console.log(scoreArr);
+
+				for(let i = 0; i < scoreArr.length; i++) {
+
+					// Checks to see if the nth index of scoreArr is lower then the current low score
+					if(scoreArr[i] < lowScore) {
+
+						//Assign new low score
+						lowScore = scoreArr[i];
+
+						//Assign new index which is the current lowest score 
+						index = i;
+					}
+				}
+				modal(data, index);
+
+				// Testing
+				console.log('Low score' , lowScore);
+				console.log('index' , index);
+			});
+		}
+
+	function modal(data, index) {
+			$('.modal-body').empty();
+			let matchName = data[index].name;
+			let matchImg = data[index].photo;
+
+			// Modal
+			$('#myModal').modal('show');
+			console.log('image:', matchImg);
+			console.log('name:', matchName);
+	    		let nameDiv = $('<h3 style="color:black">');
+	    		let imgDiv = $('<img style="width:300px">');
+	    		nameDiv.text(matchName);
+	    		imgDiv.attr('src' , matchImg);
+	    		$('.modal-body').append(nameDiv);
+	    		$('.modal-body').append(imgDiv);
+	}
+}); 
+</script>
+</body>
+</html>
